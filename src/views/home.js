@@ -8,6 +8,9 @@ export default function Home() {
   const [data, setData] = useState([]);
   const [query, setQuery] = useState('');
 
+  // eslint-disable-next-line new-cap
+  // useCustomHook();
+
   useEffect(() => {
     const fetchData = async () => {
       const data = await cardData();
